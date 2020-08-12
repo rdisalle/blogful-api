@@ -13,7 +13,7 @@ const serializeArticle = article => ({
   date_published: article.date_published,
 })
 
-articlesRouter
+articlesRoute
   .route('/')
   .get((req, res, next) => {
     const knexInstance = req.app.get('db')
