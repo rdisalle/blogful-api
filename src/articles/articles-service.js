@@ -15,7 +15,7 @@ const ArticlesService = {
     return knex.from('blogful_articles').select('*').where('id', id).first()
   },
   deleteArticle(knex, id) {
-    return knex('blogful_articles')a
+    return knex('blogful_articles')
       .where({ id })
       .delete()
   },
